@@ -2,3 +2,178 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+* {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
+@keyframes fadeInEnlarge {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+}
+
+.fade-in-enlarge {
+  animation: fadeInEnlarge 2s ease-in-out forwards;
+  opacity: 0; 
+  transform: scale(0.7);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0; 
+}
+
+
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.fade-in-from-top {
+  animation: fadeInFromTop 1s ease-out forwards;
+  opacity: 0; 
+  transform: translateY(-100%); 
+}
+
+
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+@keyframes fadeInBtn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.fade-in-from-bottom {
+  animation: fadeInFromBottom 1s ease-out forwards;
+  opacity: 0; 
+  transform: translateY(-60px); 
+}
+
+.btn-fade-in-from-bottom {
+  animation: fadeInBtn 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+    visibility: hidden;
+  }
+   100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-from-right {
+  animation: fadeInFromRight 1s ease-out forwards;
+  opacity: 0; 
+  transform: translateX(100%); 
+}
+
+.transfer-position-xy-1{
+    @apply transition-transform duration-300 hover:-translate-y-1 hover:-translate-x-1 
+}
+
+
+@keyframes fadeInAndPulse {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in-and-pulse {
+  opacity: 0;
+  animation: fadeInAndPulse 3s ease-in-out 1s forwards;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    visibility: hidden;
+  }
+   100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-from-left {
+  animation: fadeInFromLeft 1s ease-out forwards;
+  opacity: 0; 
+  transform: translateY(-100%); 
+}
