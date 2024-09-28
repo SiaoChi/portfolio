@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import About from '../../components/HomePage/About';
 import Skill from '../../components/HomePage/Skill';
 import Work from '../../components/HomePage/Work';
-
+import Certification from '../../components/HomePage/Certification';
 
 const Wrapper = styled.div`
   display: flex;
@@ -37,6 +37,7 @@ const Home = () => {
       <About />
       <Skill />
       <Work />
+      <Certification />
       {/* <Project /> */}
       {/* <Contact /> */}
       </Container>

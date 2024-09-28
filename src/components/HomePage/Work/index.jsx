@@ -41,6 +41,16 @@ const Point = styled.li`
   line-height: 1.5;
 `;
 
+const WorkItem = styled.div`
+  margin-bottom: 1rem;
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: #666;
+  }
+`;
+
 const WorkDate = styled.p`
   color: #666;
   font-size: 0.9rem;
@@ -49,6 +59,14 @@ const WorkDate = styled.p`
 const JobTitle = styled.h3`
   font-size: 1.2rem;
   font-weight: 500;
+`;
+
+const HorizontalLine = styled.hr`
+  width: 100%;
+  height: 1px;
+  background-color: #606060;
+  border: none;
+  margin: 1rem 0;
 `;
 
 function Work() {
@@ -90,27 +108,16 @@ function Work() {
 
         <WorkItem>
           <WorkDate>Mar/2017 - Sep/2020</WorkDate>
-          <JobTitle>Ogilvy - Associate Account Director</JobTitle>
+          <JobTitle>Ogilvy - Account Manager / Associate Account Director</JobTitle>
         <WorkDescSec>
             <Point>Managed a team of advertising professionals, including account managers, creative directors, and media specialists.</Point>
             <Point>Negotiated contracts and managed budgets for multiple campaigns simultaneously.</Point>
           </WorkDescSec>
         </WorkItem>
+        <HorizontalLine />
       </Container>
     </Wrapper>
   )
 }
-
-const WorkItem = styled.div`
-  margin-bottom: 1rem;
-  
-  h3 {
-    margin-bottom: 0.5rem;
-  }
-
-  p {
-    color: #666;
-  }
-`;
 
 export default Work;

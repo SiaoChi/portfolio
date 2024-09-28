@@ -60,7 +60,7 @@ function Skill() {
         <SkillWrapper>
           <SkillTitle>Main Skills</SkillTitle>
           <SkillDesc>
-            Python, JavaScript, Node.js, FastAPI, WebSocket, MQTT, RESTFul API, Firebase, MYSQL, Redis, Git, CI/CD, Pytest, MOTT
+            Python, JavaScript, Node.js, FastAPI, WebSocket, MQTT, RESTFul API, Firebase, MYSQL, Redis, Git, CI/CD, Pytest
           </SkillDesc>
         </SkillWrapper>
 

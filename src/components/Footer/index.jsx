@@ -62,7 +62,7 @@ const HorizontalLine = styled.hr`
 const Footer = () => {
   return (
     <Wrapper>
-      <HorizontalLine />
+      {/* <HorizontalLine /> */}
       <Container>
       <Logo>KG.</Logo>
       <Nav>

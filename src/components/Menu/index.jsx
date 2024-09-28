@@ -44,6 +44,7 @@ const Nav = styled.nav`
   display: flex;
   gap: 2.5rem;
   list-style: none;
+  margin-right: 3rem;
   @media (max-width: 768px) {
     display: none;
   }
@@ -90,7 +91,7 @@ const LogoMobile = styled.div`
 const MobileMenu = styled.div`
   display: none;
   @media (max-width: 768px) {
-    display: flex;
+    display: ${props => props.isOpen ? 'flex' : 'none'};
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -160,6 +161,7 @@ const Menu = () => {
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</NavItem>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</NavItem>
           <NavItem to="/project">Project</NavItem>
+          <NavItem to='https://www.linkedin.com/in/kelly-g-b105b6159/' target='_blank'>Contact</NavItem>
         </Nav>
 
         <LogoMobile>KG.</LogoMobile>
@@ -171,10 +173,11 @@ const Menu = () => {
             />
         </MobileMenuButton>
 
-        <MobileMenu style={isMobileMenuOpen ? {display: 'flex'} : {display: 'none'}}>
+        <MobileMenu isOpen={isMobileMenuOpen}>
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</MobileMenuItem>        
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</MobileMenuItem>
               <MobileMenuItem to="/project" onClick={toggleMenu}>Project</MobileMenuItem>
+              <MobileMenuItem href='https://www.linkedin.com/in/kelly-g-b105b6159/' target='_blank'>Contact</MobileMenuItem>
         </MobileMenu>
 
       </Container>

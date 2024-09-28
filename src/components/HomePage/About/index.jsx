@@ -82,10 +82,10 @@ function About() {
         <LeftSection>
           <Headline>Hi I'm Kelly Guo<br/>a software engineer.</Headline>
           <Subtitle>
-            Backend engineer with expertise in building scalable systems using Node.js, Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.
+            Backend engineer with expertise in building scalable systems using Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.
             <br/>
             <br/>
-            A backend engineer with a strong foundation in communication and client management from a prior role as an advertising director. 
+            I have a strong foundation in communication and project management from a prior role as an advertising director. 
           </Subtitle>
         </LeftSection>
         <RightSection>
