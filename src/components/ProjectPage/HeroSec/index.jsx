@@ -66,7 +66,7 @@ const Desc = styled.h3`
   @media (max-width: 1024px) {
     padding-left: 0;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 330px;
   }
 `;
@@ -80,7 +80,7 @@ function HeroSec() {
           <Title>Welcome!<br/>Kelly's Side Projects.</Title>
         </LeftSection>
         <RightSection>
-            <Desc>The following work is my side project, covering the full-stack domain, including backend architecture development.</Desc>  
+            <Desc>The following works are my side projects, covering the full-stack domain, including backend architecture development.</Desc>  
         </RightSection>
       </Container>
     </Wrapper>

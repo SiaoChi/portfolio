@@ -87,9 +87,6 @@ function About() {
             <br/>
             <br/>
             I also bring strong communication and project management skills from my experience as an advertising director. 
-            <br/>
-            <br/>
-            Continuously self-taught, always digging deeper to uncover my potential.
           </Subtitle>
         </LeftSection>
         <RightSection>
