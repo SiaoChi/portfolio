@@ -126,7 +126,7 @@ Error generating stack: `+l.message+`
   min-width: 200px;
   width: 300px;
   object-fit: cover;
-`;function zg(){return x.jsx(kg,{id:"about",children:x.jsxs(Eg,{children:[x.jsxs(Pg,{children:[x.jsxs(Cg,{children:["Hi I'm Kelly Guo",x.jsx("br",{}),"a software engineer."]}),x.jsxs(_g,{children:["Backend engineer with expertise in building scalable systems using Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.",x.jsx("br",{}),x.jsx("br",{}),"I also bring strong communication and project management skills from my experience as an advertising director.",x.jsx("br",{}),x.jsx("br",{}),"Continuously self-taught, always digging deeper to uncover my potential."]})]}),x.jsx(jg,{children:x.jsx(Ng,{src:"./img/profile.jpg"})})]})})}const Rg=[{title:"Main Skills",desc:"Python, JavaScript, Node.js, FastAPI, WebSocket, MQTT, RESTFul API, Firebase, MYSQL, Redis, Git, CI/CD, Pytest"},{title:"DevOps",desc:"AWS, EC2, S3, CloudFront, Route53, Lambda, API Gateway, RDS"},{title:"Frontend",desc:"React,TailwindCSS, HTML, CSS, Styled Components,"}],Tg=j.div`
+`;function zg(){return x.jsx(kg,{id:"about",children:x.jsxs(Eg,{children:[x.jsxs(Pg,{children:[x.jsxs(Cg,{children:["Hi I'm Kelly Guo",x.jsx("br",{}),"a software engineer."]}),x.jsxs(_g,{children:["Backend engineer with expertise in building scalable systems using Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.",x.jsx("br",{}),x.jsx("br",{}),"I also bring strong communication and project management skills from my experience as an advertising director."]})]}),x.jsx(jg,{children:x.jsx(Ng,{src:"./img/profile.jpg"})})]})})}const Rg=[{title:"Main Skills",desc:"Python, JavaScript, Node.js, FastAPI, WebSocket, MQTT, RESTFul API, Firebase, MYSQL, Redis, Git, CI/CD, Pytest"},{title:"DevOps",desc:"AWS, EC2, S3, CloudFront, Route53, Lambda, API Gateway, RDS"},{title:"Frontend",desc:"React,TailwindCSS, HTML, CSS, Styled Components,"}],Tg=j.div`
   padding: 3rem 0;
   display: flex;
   justify-content: center;
@@ -575,10 +575,10 @@ Error generating stack: `+l.message+`
   @media (max-width: 1024px) {
     padding-left: 0;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 330px;
   }
-`;function Mv(){return x.jsx(Rv,{id:"about",children:x.jsxs(Tv,{children:[x.jsx(Lv,{children:x.jsxs(Iv,{children:["Welcome!",x.jsx("br",{}),"Kelly's Side Projects."]})}),x.jsx($v,{children:x.jsx(Ov,{children:"The following work is my side project, covering the full-stack domain, including backend architecture development."})})]})})}const Dv=j.div`
+`;function Mv(){return x.jsx(Rv,{id:"about",children:x.jsxs(Tv,{children:[x.jsx(Lv,{children:x.jsxs(Iv,{children:["Welcome!",x.jsx("br",{}),"Kelly's Side Projects."]})}),x.jsx($v,{children:x.jsx(Ov,{children:"The following works are my side projects, covering the full-stack domain, including backend architecture development."})})]})})}const Dv=j.div`
   display: flex;
   justify-content: center;
   align-items: center;
