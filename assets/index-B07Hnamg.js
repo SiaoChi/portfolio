@@ -546,13 +546,14 @@ Error generating stack: `+l.message+`
     height: 180px;
     }
 `,Lv=j.div`
-  flex: 1;
+  flex: 4;
   display: flex;
   flex-direction: column;
 
 `,$v=j.div`
-  flex: 1;
+  flex: 6;
   display: flex;
+  justify-content: start;
 `,Iv=j.h2`
   font-size: 2.5rem;
   font-weight: 600;
@@ -564,17 +565,17 @@ Error generating stack: `+l.message+`
   }
 `,Ov=j.h3`
   font-size: 1.4rem;
-  max-width: 600px;
   font-weight: 300;
   line-height: 1.1;
   color: #606060;
   margin-top: 4rem;
-  padding-left: 3rem;
+  width: 90%;
+  padding-left: 4rem;
   @media (max-width: 1024px) {
     padding-left: 0;
     margin-top: 1rem;
     font-size: 1rem;
-    max-width: 300px;
+    max-width: 330px;
   }
 `;function Mv(){return x.jsx(Rv,{id:"about",children:x.jsxs(Tv,{children:[x.jsx(Lv,{children:x.jsxs(Iv,{children:["Welcome!",x.jsx("br",{}),"Kelly's Side Projects."]})}),x.jsx($v,{children:x.jsx(Ov,{children:"The following work is my side project, covering the full-stack domain, including backend architecture development."})})]})})}const Dv=j.div`
   display: flex;
