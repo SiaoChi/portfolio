@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-  padding: 3rem 0;
+  padding: 0 0 3rem 0;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   max-width: 1280px;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,7 +67,7 @@ const Desc = styled.h3`
     padding-left: 0;
     margin-top: 1rem;
     font-size: 1.1rem;
-    max-width: 330px;
+    max-width: 500px;
   }
 `;
 

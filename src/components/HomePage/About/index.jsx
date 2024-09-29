@@ -90,7 +90,7 @@ function About() {
           </Subtitle>
         </LeftSection>
         <RightSection>
-          <ProfileImg src='./img/profile.jpg'></ProfileImg>
+          <ProfileImg src='./img/profile.jpg' alt='profile'></ProfileImg>
         </RightSection>
       </Container>
     </Wrapper>
