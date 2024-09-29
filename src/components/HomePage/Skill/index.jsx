@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { data } from './config';
 const Wrapper = styled.div`
   padding: 3rem 0;
   display: flex;
@@ -52,31 +52,18 @@ const HorizontalLine = styled.hr`
   margin: 1rem 0;
 `;
 
+
 function Skill() {
   return (
     <Wrapper>
       <Container>
 
-        <SkillWrapper>
-          <SkillTitle>Main Skills</SkillTitle>
-          <SkillDesc>
-            Python, JavaScript, Node.js, FastAPI, WebSocket, MQTT, RESTFul API, Firebase, MYSQL, Redis, Git, CI/CD, Pytest
-          </SkillDesc>
-        </SkillWrapper>
-
-        <SkillWrapper>
-          <SkillTitle>DevOps</SkillTitle>
-          <SkillDesc>
-            AWS, EC2, S3, CloudFront, Route53, Lambda, API Gateway, RDS
-          </SkillDesc>
-        </SkillWrapper>
-
-        <SkillWrapper>
-          <SkillTitle>Frontend</SkillTitle>
-          <SkillDesc>
-            React.js, Tailwind CSS, Styled Components
-          </SkillDesc>
-        </SkillWrapper>
+        {data.map((item, index) => (
+          <SkillWrapper key={index}>
+            <SkillTitle>{item.title}</SkillTitle>
+            <SkillDesc>{item.desc}</SkillDesc>
+          </SkillWrapper>
+        ))}
 
         <HorizontalLine />
       </Container>

@@ -75,6 +75,7 @@ const ProfileImg = styled.img`
   object-fit: cover;
 `;
 
+
 function About() {
   return (
     <Wrapper id='about'>
@@ -85,7 +86,10 @@ function About() {
             Backend engineer with expertise in building scalable systems using Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.
             <br/>
             <br/>
-            I have a strong foundation in communication and project management from a prior role as an advertising director. 
+            I also bring strong communication and project management skills from my experience as an advertising director. 
+            <br/>
+            <br/>
+            Continuously self-taught, always digging deeper to uncover my potential.
           </Subtitle>
         </LeftSection>
         <RightSection>

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { data } from './config';
 
 const Wrapper = styled.div`
   display: flex;
@@ -75,45 +76,18 @@ function Work() {
       <Container>
         <WorkTitle>Work Experience</WorkTitle>
         
-        <WorkItem>
-          <WorkDate>Nov/2023 - Nov/2024</WorkDate>
-          <JobTitle>Brocere Electronics - Software Engineer - Backend</JobTitle>
-          <WorkDescSec>
-            <Point>Designed and implemented a MQTT subscription system with message queue, optimizing data processing workflows and database access patterns.
-</Point>
-            <Point>Developed a multi-threaded application using Python to handle concurrent MQTT subscriptions, improving system efficiency and preventing bottlenecks.
-</Point>
-            <Point>Integrated Celery for managing high-volume I/O operations, ensuring main application responsiveness.</Point>
-            <Point>Collaborated with firmware and AI engineers to develop an IoT-based fire detection system, processing large volumes of image data.</Point>
-          </WorkDescSec>
-        </WorkItem>
-
-        <WorkItem>
-          <WorkDate>Mar/2023 - Sep/2024</WorkDate>
-          <JobTitle>AppWorks School - Backend Engineer</JobTitle>
-          <WorkDescSec>
-            <Point>Led a team to first place in an internal e-commerce promotion project competition.</Point>
-            <Point>Independently developed a Real-Time Matching System project.</Point>
-          </WorkDescSec>
-        </WorkItem>
-
-        <WorkItem>
-          <WorkDate>Dec/2020 - Dec/2022</WorkDate>
-          <JobTitle>30 Table - Account Director / Corporate partner</JobTitle>
-        <WorkDescSec>
-            <Point>Developed and executed marketing strategies for clients, including market research, campaign planning and execution, and results analysis.</Point>
-            <Point>Managed all aspects of client relationships, including communication, presentations, and contract negotiation.</Point>
-          </WorkDescSec>
-        </WorkItem>
-
-        <WorkItem>
-          <WorkDate>Mar/2017 - Sep/2020</WorkDate>
-          <JobTitle>Ogilvy - Account Manager / Associate Account Director</JobTitle>
-        <WorkDescSec>
-            <Point>Managed a team of advertising professionals, including account managers, creative directors, and media specialists.</Point>
-            <Point>Negotiated contracts and managed budgets for multiple campaigns simultaneously.</Point>
-          </WorkDescSec>
-        </WorkItem>
+        {data.map((item, index) => (
+          <WorkItem key={index}>
+            <WorkDate>{item.date}</WorkDate>
+            <JobTitle>{item.title}</JobTitle>
+            <WorkDescSec>
+              {item.desc.map((desc, index) => (
+                <Point key={index}>{desc}</Point>
+              ))}
+            </WorkDescSec>
+          </WorkItem>
+        ))}
+        
         <HorizontalLine />
       </Container>
     </Wrapper>

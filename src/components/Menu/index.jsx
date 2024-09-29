@@ -117,9 +117,22 @@ const MobileMenuItem = styled(Link)`
   }
 `;
 
+const IconWrapper = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+const Icon = styled.img`
+  width: 1.5rem;
+  height: 1.5rem;
+`;
+
+
 const Menu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const LinkedinLink = 'https://www.linkedin.com/in/kelly-g-b105b6159/';
+  const GithubLink = 'https://github.com/SiaoChi';
 
   const toggleMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -134,7 +147,7 @@ const Menu = () => {
     const scrollToElement = () => {
       const element = document.querySelector(hashtag);
       if (element) {
-        const headerOffset = 100; // 預留100px的菜單高度
+        const headerOffset = 100; // 預留100px的menu高度
         const elementPosition = element.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY - headerOffset;
         
@@ -161,7 +174,14 @@ const Menu = () => {
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</NavItem>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</NavItem>
           <NavItem to="/project">Project</NavItem>
-          <NavItem to='https://www.linkedin.com/in/kelly-g-b105b6159/' target='_blank'>Contact</NavItem>
+          <IconWrapper>
+            <NavItem to={GithubLink} target='_blank'>
+              <Icon src='./img/github.png' alt='github'/>
+            </NavItem>
+            <NavItem to={LinkedinLink} target='_blank'>
+              <Icon src='./img/linkedin.png' alt='linkedin'/>
+            </NavItem>
+          </IconWrapper>
         </Nav>
 
         <LogoMobile>KG.</LogoMobile>
@@ -177,7 +197,14 @@ const Menu = () => {
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</MobileMenuItem>        
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</MobileMenuItem>
               <MobileMenuItem to="/project" onClick={toggleMenu}>Project</MobileMenuItem>
-              <MobileMenuItem href='https://www.linkedin.com/in/kelly-g-b105b6159/' target='_blank'>Contact</MobileMenuItem>
+              <IconWrapper>
+                <NavItem to={GithubLink} target='_blank'>
+                  <Icon src='./img/github.png' alt='github'/>
+                </NavItem>
+                <NavItem to={LinkedinLink} target='_blank'>
+                  <Icon src='./img/linkedin.png' alt='linkedin'/>
+                </NavItem>
+              </IconWrapper>
         </MobileMenu>
 
       </Container>
