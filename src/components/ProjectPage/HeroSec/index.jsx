@@ -31,15 +31,16 @@ const Container = styled.div`
 
 
 const LeftSection = styled.div`
-  flex: 1;
+  flex: 4;
   display: flex;
   flex-direction: column;
 
 `;
 
 const RightSection = styled.div`
-  flex: 1;
+  flex: 6;
   display: flex;
+  justify-content: start;
 `;
 
 const Title = styled.h2`
@@ -55,17 +56,17 @@ const Title = styled.h2`
 
 const Desc = styled.h3`
   font-size: 1.4rem;
-  max-width: 600px;
   font-weight: 300;
   line-height: 1.1;
   color: #606060;
   margin-top: 4rem;
-  padding-left: 3rem;
+  width: 90%;
+  padding-left: 4rem;
   @media (max-width: 1024px) {
     padding-left: 0;
     margin-top: 1rem;
     font-size: 1rem;
-    max-width: 300px;
+    max-width: 330px;
   }
 `;
 
