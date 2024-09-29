@@ -562,6 +562,7 @@ Error generating stack: `+l.message+`
   @media (max-width: 1024px) {
     font-size: 1.5rem;
     margin-top: 2rem;
+    min-width: 300px;
   }
 `,Ov=j.h3`
   font-size: 1.4rem;
