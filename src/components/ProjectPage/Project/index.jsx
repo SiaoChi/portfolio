@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {data} from './config';
 
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -114,7 +115,7 @@ function ProjectDetail() {
   return (
     <Wrapper>
         {data.map((project, index) => (
-        <Container key={index}>
+        <Container key={index} data-aos="fade-up" data-aos-duration={`${index * 200 + 800}`}>
             <ProjectTextWrapper key={index}>
                 <ProjectTitle>{project.title}</ProjectTitle>
                 <ProjectDesc>{project.desc}</ProjectDesc>

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const Wrapper = styled.div`
   margin-top: 40px;
   display: flex;
@@ -30,18 +29,6 @@ const Title = styled.h4`
   min-width: 100px;
 `;
 
-const WorkDescSec = styled.div`
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-  width: 90%;
-`;
-
-const Point = styled.li`
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-`;
 
 const WorkItem = styled.div`
   margin-bottom: 1rem;
@@ -69,7 +56,7 @@ function Certification() {
       <Container>
         <Title>Certification</Title>
 
-        <WorkItem>
+        <WorkItem data-aos="fade-up" data-aos-duration="1000">
           <WorkDate>Aug/2024</WorkDate>
           <JobTitle>AWS Certified Cloud Practitioner</JobTitle>
         </WorkItem>

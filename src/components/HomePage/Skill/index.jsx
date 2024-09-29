@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { data } from './config';
+
 const Wrapper = styled.div`
   padding: 3rem 0;
   display: flex;
@@ -56,7 +57,7 @@ const HorizontalLine = styled.hr`
 function Skill() {
   return (
     <Wrapper>
-      <Container>
+      <Container data-aos="fade-up" data-aos-duration="1000">
 
         {data.map((item, index) => (
           <SkillWrapper key={index}>
