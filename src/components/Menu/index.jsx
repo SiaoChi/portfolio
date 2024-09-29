@@ -32,7 +32,7 @@ const Container = styled.div`
   }
 `;
 
-const Logo = styled.div`
+const Logo = styled.a`
   font-size: 2.5rem;
   font-weight: bold;
   @media (max-width: 768px) {
@@ -174,7 +174,7 @@ const Menu = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo>KG.</Logo>
+        <Logo href="/">KG.</Logo>
         <Nav>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</NavItem>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</NavItem>
