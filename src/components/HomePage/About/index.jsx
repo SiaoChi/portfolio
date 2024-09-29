@@ -81,8 +81,8 @@ function About() {
     <Wrapper id='about'>
       <Container>
         <LeftSection>
-          <Headline>Hi I'm Kelly Guo<br/>a software engineer.</Headline>
-          <Subtitle>
+          <Headline data-aos="fade-up" data-aos-duration="800">Hi I'm Kelly Guo<br/>a software engineer.</Headline>
+          <Subtitle data-aos="fade-up" data-aos-duration="1000">
             Backend engineer with expertise in building scalable systems using Python, and AWS. Skilled in cloud architecture, IoT data processing, and real-time systems.
             <br/>
             <br/>
