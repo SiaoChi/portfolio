@@ -127,7 +127,6 @@ const Icon = styled.img`
   height: 1.5rem;
 `;
 
-
 const Menu = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -139,30 +138,36 @@ const Menu = () => {
   };
 
   const handleMenuItemClick = useCallback((e, hashtag) => {
-    e.preventDefault();
     setIsMobileMenuOpen(false);
 
-    const isHomePage = window.location.pathname === '/';
-
-    const scrollToElement = () => {
-      const element = document.querySelector(hashtag);
-      if (element) {
-        const headerOffset = 100; // 預留100px的menu高度
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
-        
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-      }
-    };
-
-    if (isHomePage) {
-      scrollToElement();
+    if (!hashtag) {
+      // 如果沒有 hashtag，直接滾動到頁面頂部
+      window.scrollTo(0, 0);
     } else {
-      navigate('/');
-      setTimeout(scrollToElement, 100);
+      // 如果有 hashtag，使用原來的邏輯
+      e.preventDefault();
+      const isHomePage = window.location.pathname === '/';
+
+      const scrollToElement = () => {
+        const element = document.querySelector(hashtag);
+        if (element) {
+          const headerOffset = 100;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.scrollY - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      };
+
+      if (isHomePage) {
+        scrollToElement();
+      } else {
+        navigate('/');
+        setTimeout(scrollToElement, 100);
+      }
     }
   }, [navigate]);
 
@@ -173,7 +178,7 @@ const Menu = () => {
         <Nav>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</NavItem>
           <NavItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</NavItem>
-          <NavItem to="/project">Project</NavItem>
+          <NavItem to="/project" onClick={() => handleMenuItemClick()}>Project</NavItem>
           <IconWrapper>
             <NavItem to={GithubLink} target='_blank'>
               <Icon src='./img/github.png' alt='github'/>
@@ -196,7 +201,7 @@ const Menu = () => {
         <MobileMenu isOpen={isMobileMenuOpen}>
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#about')}>About</MobileMenuItem>        
               <MobileMenuItem to="/" onClick={(e) => handleMenuItemClick(e, '#work')}>Work</MobileMenuItem>
-              <MobileMenuItem to="/project" onClick={toggleMenu}>Project</MobileMenuItem>
+              <MobileMenuItem to="/project" onClick={() => handleMenuItemClick()}>Project</MobileMenuItem>
               <IconWrapper>
                 <NavItem to={GithubLink} target='_blank'>
                   <Icon src='./img/github.png' alt='github'/>
