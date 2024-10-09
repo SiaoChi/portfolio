@@ -4,6 +4,11 @@ import Menu from './components/Menu'
 import Footer from './components/Footer'
 import './App.css'
 import ProjectPage from './Pages/Project/Project.jsx'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 function App() {
   const isGithubPages = window.location.hostname === 'siaochi.github.io';
   const basename = isGithubPages ? '/portfolio/' : ''; 

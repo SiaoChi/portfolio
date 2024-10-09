@@ -77,7 +77,7 @@ function Work() {
         <WorkTitle>Work Experience</WorkTitle>
         
         {data.map((item, index) => (
-          <WorkItem key={index}>
+          <WorkItem key={index} data-aos="fade-up" data-aos-duration={`${index * 200 + 800}`}>
             <WorkDate>{item.date}</WorkDate>
             <JobTitle>{item.title}</JobTitle>
             <WorkDescSec>
