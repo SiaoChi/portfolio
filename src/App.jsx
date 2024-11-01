@@ -6,12 +6,29 @@ import './App.css'
 import ProjectPage from './Pages/Project/Project.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect, useState } from 'react'
+import Loading from './components/Loading'
 
 AOS.init();
 
 function App() {
   const isGithubPages = window.location.hostname === 'siaochi.github.io';
   const basename = isGithubPages ? '/portfolio/' : ''; 
+
+  const [isLoading, setIsloading] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsloading(false)
+    }, 400)
+  })
+
+  if(isLoading){
+    return(
+        <Loading />
+    )
+  }
+
   return (
     <Router basename={basename}>
         <Menu />

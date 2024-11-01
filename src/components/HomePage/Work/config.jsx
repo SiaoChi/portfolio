@@ -5,7 +5,7 @@ export const data = [
     title: 'Brocere Electronics - Software Engineer - Backend',
     desc: [
       'Designed and implemented a MQTT subscription system with message queue, optimizing data processing workflows and database access patterns.',
-      'Moving from single-thread to multi-thread with message streaming, handling 1000+ subscriptions and data rates from every 2 seconds to every 20 minutes.',
+      'Moving from single-thread to multi-thread with message streaming, handling hundreds of subscriptions and data rates.',
       'Integrated Celery for managing high-volume I/O operations, ensuring main application responsiveness.',
       'Collaborated with firmware and AI engineers to develop an IoT-based fire detection system, processing large volumes of image data.',
     ],
