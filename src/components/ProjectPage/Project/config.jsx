@@ -14,21 +14,14 @@ export const data = [
         link: 'https://github.com/SiaoChi/one-house-web-backend',
     },
     {
-        title: '03 / Campaign Website for TransGlobe Life Insurance Inc. ',
-        desc: 'A business website for promoting and selling insurance to travelers.',
-        subDesc: '#frontend #React #css #css_components #javascript',
-        img: '',
-        link: 'https://github.com/SiaoChi/travel-web',
-    },
-    {
-        title: '04 / A Hotel Branding Website.',
+        title: '03 / A Hotel Branding Website.',
         desc: 'My role is to build the frontend layout and UI design.',
         subDesc: '#frontend #React #tailwind #javascript',
         img: 'img/project4.png',
         link: 'https://github.com/SiaoChi/hotel-react',
     },
     {
-        title: '05 / My Portfolio Website.',
+        title: '04 / My Portfolio Website.',
         desc: 'My role is to build the frontend layout and UI design.',
         subDesc: '#frontend #React #tailwind #javascript',
         img: 'img/project5.png',
