@@ -38,13 +38,14 @@ const Headline = styled.h2`
 
 const Subtitle = styled.h3`
   font-size: 1.2rem;
-  width: 90%;
+  width: 70%;
   min-width: 400px;
   font-weight: 300;
   line-height: 1.1;
   color: #606060;
   margin-top: 1rem;
   @media (max-width: 768px) {
+    width: 80%;
     font-size: 1.1rem;
     min-width: 300px;
   }
@@ -60,7 +61,7 @@ const LeftSection = styled.div`
 
 const RightSection = styled.div`
   flex: 4;
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: center;
   align-items: center;
