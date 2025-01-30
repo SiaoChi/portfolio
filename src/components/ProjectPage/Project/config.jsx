@@ -27,4 +27,11 @@ export const data = [
         img: 'img/project5.png',
         link: 'https://github.com/SiaoChi/portfolio',
     },
+     {
+        title: '05 / My Recipe Website.',
+        desc: 'My very first project for practicing Fullstack website to implement CRUD functions and deploy it to fly.io.',
+        subDesc: '#frontend #tailwind #javascript #Django #MySQL',
+        img: 'img/recipe.png',
+        link: 'https://github.com/SiaoChi/recipe',
+    },
 ]
