@@ -120,7 +120,7 @@ function ProjectDetail() {
                 <ProjectTitle>{project.title}</ProjectTitle>
                 <ProjectDesc>{project.desc}</ProjectDesc>
                 <ProjectSubDesc>{project.subDesc}</ProjectSubDesc>
-                <ProjectLink target="_blank" href={project.link}>GitHub<ProjectLinkArrow>→</ProjectLinkArrow></ProjectLink>
+                <ProjectLink target="_blank" href={project.link}>More<ProjectLinkArrow>→</ProjectLinkArrow></ProjectLink>
             </ProjectTextWrapper>
             <ProjectImgWrapper>
                 <ProjectImg src={project.img || './img/demo.png'} alt={project.title} />

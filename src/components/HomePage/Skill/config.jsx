@@ -13,3 +13,4 @@ export const data = [
     desc: 'React,TailwindCSS, HTML, CSS, Styled Components,',
   },
 ]
+

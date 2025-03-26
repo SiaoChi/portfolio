@@ -7,11 +7,11 @@ export const data = [
         link: 'https://github.com/SiaoChi/friends-app',
     },
     {
-        title: '02 / Branding Website for One House Agency.',
-        desc: 'A official marketing website for a company in Taiwan. My role is to build the backend system and integrate the API.',
-        subDesc: '#backend #AWS_lambda #Firebase',
-        img: 'img/project3.png',
-        link: 'https://github.com/SiaoChi/one-house-web-backend',
+        title: '02 / My Recipe Website.',
+        desc: 'My very first project for practicing Fullstack website to implement CRUD functions and deploy it to fly.io.',
+        subDesc: '#frontend #tailwind #javascript #Django #MySQL',
+        img: 'img/recipe.png',
+        link: 'https://github.com/SiaoChi/recipe',
     },
     {
         title: '03 / A Hotel Branding Website.',
@@ -27,11 +27,11 @@ export const data = [
         img: 'img/project5.png',
         link: 'https://github.com/SiaoChi/portfolio',
     },
-     {
-        title: '05 / My Recipe Website.',
-        desc: 'My very first project for practicing Fullstack website to implement CRUD functions and deploy it to fly.io.',
-        subDesc: '#frontend #tailwind #javascript #Django #MySQL',
-        img: 'img/recipe.png',
-        link: 'https://github.com/SiaoChi/recipe',
-    },
+    {
+        title: '05 / Branding Website for One House Agency.',
+        desc: 'A official marketing website for a company in Taiwan. My role is to build the backend system and integrate the API.',
+        subDesc: '#backend #AWS_lambda #Firebase',
+        img: 'img/project3.png',
+        link: 'https://www.onehouse.com.tw/',
+    }
 ]
